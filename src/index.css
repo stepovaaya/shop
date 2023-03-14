@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color:rgba(250, 235, 215, 0.521);
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header {
+    position: relative;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+    color: rgb(153, 63, 63);
+    transform: scale(1.5);
+}
+
+
+
+
+header .shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 8px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 8px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 8px 2px rgba(34, 60, 80, 0.2);
+    z-index: 1000;
+    padding: 20px;
+
+}
+
+header .shop-cart .empty h2 {
+    font-size: 20px;
+    color: #797979;
+}
+
+header .shop-cart .item {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+header .shop-cart .item  img {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+header .shop-cart .item p {
+    color: #797979;
+    font-weight: 600;
+    
+}
+
+header .shop-cart .item .delete-icon {
+    color: #797979;
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+    color: rgb(114, 59, 59);
+    transform: scale(1.1); 
+
+}
+
+header .shop-cart .summa {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .presentation {
+    margin: 50px 0;
+    width: 100%;
+    height: 500px;
+    background: url('./img/green_sofa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: rgb(250, 235, 215);
+    position: relative;
+}
+
+header .presentation::after {
+    content: 'Лучшее для твоей кожи';
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    left: 560px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header .presentation::before {
+    content: 'с профессиональной консультацией';
+    position: absolute;
+    top: 200px;
+    left: 560px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.categories div {
+    display: inline-block;
+    background: rgba(114, 59, 59, 0.295);
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    transition: all 500ms ease;
+
+}
+
+.categories div:hover {
+    border-color: rgba(114, 59, 59, 0.74);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+main .item {
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background: rgba(250, 235, 215,0.5);
+    position: relative;
+    padding-bottom: 20px;
+
+}
+main .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.05);
+}
+
+main h2, main p, main b {
+    margin: 10px 20px;
+    color: #333;
+}
+
+main .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(114, 59, 59);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+    transform: scale(1.05) translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
